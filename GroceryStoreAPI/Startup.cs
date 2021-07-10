@@ -23,6 +23,7 @@ namespace GroceryStoreAPI
                 options.UseSqlServer(Configuration.GetConnectionString("LocalDatabase")));
             services.AddDatabaseDeveloperPageExceptionFilter();
             services.AddControllers();
+            services.AddScoped<IUnitOfWork, UnitOfWork>();
         }
 
 

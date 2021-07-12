@@ -39,8 +39,23 @@ namespace GroceryStoreAPI
 
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapControllers();
+                endpoints.MapControllerRoute(
+                    name: "default",
+                    pattern: "{controller}/{action=Index}/{id?}");
+
+
+
+
             });
+
+//            app.UseEndpoints(endpoints =>
+//            {
+//                endpoints.MapControllerRoute(
+//                    name: "default",
+//                    pattern: "{controller}/{action=Index}/{id?}");
+//            });
+
+
         }
 
     }

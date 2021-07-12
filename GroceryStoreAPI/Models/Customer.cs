@@ -1,8 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
 
-namespace GroceryStoreAPI.Data
+namespace GroceryStoreAPI.Models
 {
     public class Customer
     {
@@ -10,7 +9,6 @@ namespace GroceryStoreAPI.Data
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public DateTime DateOfBirth { get; set; }
-        public List<Trip> Trips { get; set; }
     }
 }
 
